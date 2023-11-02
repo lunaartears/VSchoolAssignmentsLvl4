@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(167, 121, 6);
+    font-family: fantasy;
+    color: bisque
+}
+.works {
+    margin: 50px;
+}
+.container1 {
+    display: flex;
+    justify-content: space-around;
+}
+.sarah-img {
+    height: 400px;
+    border-radius: 300px;
+    margin-left: 575px;
+    margin-top: 75px;
+}
