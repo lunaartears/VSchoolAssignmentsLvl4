@@ -5,6 +5,7 @@ import Home from "./components/Home.js"
 import About from "./components/About.js"
 import Products from "./components/Products.js"
 import Checkout from "./components/Checkout.js"
+import ProductDetails from "./components/ProductDetails.js"
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/products' element={<Products/>}/>
         <Route path='/checkout' element={<checkout/>}/>
+        <Route path='/products/:productId' element={<ProductDetails/>}/>
       </Routes>
     </Router>
   )

@@ -1,8 +1,15 @@
 import React from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
+//import productData from "./productData"
 
 export default function Products() {
     const navigate = useNavigate()
+
+    const products = productData.map(product => {
+        <h3>
+            <Link to={`/products/${product._id}`}>{product.name}</Link> - ${product.price}
+        </h3>
+    })
 
     return (
         <div style={{ padding: 20 }}>
